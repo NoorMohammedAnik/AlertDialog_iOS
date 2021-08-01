@@ -14,6 +14,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func buttonPressed(_ sender: Any) {
+        
+        showAlert(title: "Alert", message: "Are yo sure ?",handlerOK: { action in
+            
+            print ("Action OK Called")
+            
+        }, handlerCancel: {actionCancel in
+            
+            print("Action cancel called")
+        })
+    }
+    
 }
 
